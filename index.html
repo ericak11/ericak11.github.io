@@ -3,8 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Erica Kantor</title>
+   <link rel="stylesheet" href="styles.css">
+   <link href='http://fonts.googleapis.com/css?family=Raleway:700,400|Rock+Salt' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
+  <div id="header">Erica Kantor</div>
+  <div id="buttons">
+    <button class="button" id="about-button">About Me</button>
+    <button class="button" id="sites-button">My Work</button>
+    <button class="button" id="skills-button">Skills</button>
+    <button class="button" id="contact-button">Contact Me</button>
+  </div>
+  <div class="content" id="about-me" style="display: none;">about me</div>
+  <div class="content" id="sites" style="display: none;"> sites </div>
+  <div class="content" id="skills" style="display: none;">skills</div>
+  <div class="content" id="contact" style="display: none;">
+    <h1>Contact Me</h1>
+    <p><b>Email: </b><a href="mailto:kantor.erica@gmail.com">kantor.erica@gmail.com</a></p>
+      <p><b>LinkedIn: </b>
+      <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+      <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/ericakantor" data-format="click" data-text="Erica Kantor" data-related="false"></script>
+    </p>
+    <p><b>GitHub: </b>
+      <a class="github-button" href="https://github.com/ericak11" data-style="mega">Follow @ericak11</a>
+      <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>    </p>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

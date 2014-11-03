@@ -1,0 +1,56 @@
+#header {
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  height: 80px;
+  background: #25242C;
+  color: white;
+  font-size: 30px;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #4D505B;
+}
+
+.button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  width: 120px;
+}
+
+
+#buttons {
+  text-align: center;
+}
+
+#about-button:hover {
+  background-color: rgba(207,72,88,1);
+}
+
+
+#sites-button:hover {
+  background-color: rgba(22, 167,157, 1);
+}
+
+
+#skills-button:hover {
+  background-color: rgba(128,98,139,1);
+}
+
+#contact-button:hover {
+  background-color: rgba(244, 172, 66, 1);
+}
+
+.content {
+  width: 600px;
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  margin-left: auto ;
+  margin-right: auto ;
+  border-radius: 10px;
+  margin-top: 15px;
+}
