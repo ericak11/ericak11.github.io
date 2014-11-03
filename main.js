@@ -51,33 +51,44 @@ $( document ).ready( function() {
 
  $about.on("click", function(e) {
     e.stopPropagation();
-    hideAll()
-    $('#about-me').css({display: ""})
+    hideAll();
+     setTimeout(function() {
+      $('#about-me').fadeIn();
+      $('#about-me').css({border: "5px solid rgba(207,72,88,1)"})
+    }, 300);
   });
 
   $sites.on("click", function(e) {
     e.stopPropagation();
-    hideAll()
-    $('#sites').css({display: ""})
+    hideAll();
+    setTimeout(function() {
+      $('#sites').fadeIn();
+      $('#sites').css({border: "5px solid rgba(22, 167,157, 1)"})
+    }, 300);
   });
 
   $skills.on("click", function(e) {
     e.stopPropagation();
     hideAll();
-    console.log("CLICKED")
-    $('#skills').css({display: ""})
+     setTimeout(function() {
+      $('#skills').fadeIn();
+      $('#skills').css({border: "5px solid rgba(128,98,139,1)"})
+    }, 300);
   });
 
   $contact.on("click", function(e) {
     e.stopPropagation();
-    hideAll()
-    $('#contact').css({display: ""})
+    hideAll();
+    setTimeout(function() {
+      $('#contact').fadeIn();
+      $('#contact').css({border: "5px solid rgba(244, 172, 66, 1)"})
+    }, 300);
   });
 
   function hideAll() {
-    $('#skills').css({display: "none"});
-    $('#sites').css({display: "none"});
-    $('#about-me').css({display: "none"});
-    $('#contact').css({display: "none"});
+    $('#skills').fadeOut(200);
+    $('#sites').fadeOut(200);
+    $('#about-me').fadeOut(200);
+    $('#contact').fadeOut(200);
   }
 });
