@@ -1,4 +1,8 @@
 /*This stylesheet contains some custom class rather than Bootstrap*/
+.works {
+  max-width: 550px;
+  text-align: center;
+}
 
 a.brand img {
   border-radius:50%;
