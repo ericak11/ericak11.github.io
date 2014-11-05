@@ -9,8 +9,11 @@
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/css/style-single-page.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-        <link href="css/fontello.css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/vertical-scroll.js"></script>
+    <script src="js/mail.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Add fancyBox main JS and CSS files -->
     <script type="text/javascript" src="/js/jquery.fancybox.js"></script>
@@ -165,18 +168,16 @@
         <h3 id="myModalLabel"><i class="fa fa-envelope-o"></i> Contact Me</h3>
       </div>
       <div class="modal-body">
-        <form action="mailto:kantor.erica@gmail.com" method="post" enctype="text/plain">
-          <input type="text" placeholder="Your Name">
-          <input type="text" placeholder="Your Email">
-          <textarea rows="3" style="width:80%"></textarea>
+        <form action="" id="contact-form" method="post" action="email.php" enctype="text/plain">
+          <input type="text" placeholder="Your Name" id="name" required data-validation-required-message="Please enter your name.">
+          <input type="text" placeholder="Your Email" id="email" required data-validation-required-message="Please enter your email.">
+          <textarea rows="3" style="width:80%" id="message" placeholder="Please input messsage"></textarea>
           <br/>
-          <button type="submit" class="btn btn-large"><i class="fa fa-paper-plane"></i> SUBMIT</button>
+          <button type="submit" id="submit" class="btn btn-large"><i class="fa fa-paper-plane"></i> SUBMIT</button>
         </form>
       </div>
     </div>
     <!-- Scripts -->
-    <script src="js/vertical-scroll.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script>
       $('#myModal').modal('hidden')
     </script>
