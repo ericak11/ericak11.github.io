@@ -4012,6 +4012,7 @@ to {
   top: 10%;
 }
 .modal-header {
+  background-color: #30a5dc;
   padding: 9px 15px;
   border-bottom: 1px solid #eee;
 }
@@ -4021,12 +4022,12 @@ to {
 .modal-header h3 {
   margin: 0;
   line-height: 30px;
-  color:#242424;
+  color: white;
 }
 .modal-body {
   position: relative;
   overflow-y: auto;
-  max-height: 400px;
+  max-height:400px;
   padding: 15px;
   text-align: center;
   color:#242424;
