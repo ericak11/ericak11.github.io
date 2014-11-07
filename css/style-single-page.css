@@ -75,14 +75,15 @@ ul.social-icons li a:hover {
 }
 /***** Skills *****/
 #skills .span3 {
-  width:235px;
+  width:200px;
   overflow: hidden;
+    margin-bottom: 20px;
 }
 #skills .span5 {
   text-align:left;
   padding:47px 0;
 }
-#skills .ps, #skills .ai, #skills .html, #skills .css {
+#skills .ps, #skills .ai, #skills .html, #skills .css, #skills .express {
   padding:25px;
   width:100px;
   height:100px;
@@ -109,17 +110,27 @@ ul.social-icons li a:hover {
 #skills .css {
   background:#39d084;
 }
-#skills .ps:hover, #skills .ai:hover, #skills .html:hover, #skills .css:hover {
+#skills .express {
+  background:#30a5dc;
+}
+#skills .ps:hover, #skills .ai:hover, #skills .html:hover, #skills .css:hover, #skills .express:hover{
   border:8px solid #fff;
 }
-#skills .ps h3, #skills .ai h3, #skills .html h3, #skills .css h3 {
+#skills .ai h3, #skills .html h3, #skills .css h3, #skills .express h3 {
   color:#fff;
-  font-size: 3.4em;
+  font-size: 25px;
   font-weight: normal;
   line-height: 80px;
 }
+#skills .ps h3 {
+  color:#fff;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 40px;
+}
 #skills .html h3, #skills .css h3 {
-  font-size: 2.2em;
+  margin-left: -10px;
+  font-size: 25px;
 }
 .expand-bg {
   background: none repeat scroll 0 0 #EAEDF2;
@@ -279,4 +290,23 @@ ul.work-images li img:hover {
 }
 .footer p a:hover {
   color:#39d084;
+}
+
+.columnA {
+  display: table-cell;
+}
+
+.columnB {
+  display: table-cell;
+}
+
+@media (max-width: 1080px) {
+  .columnA {
+    display: block;
+  }
+
+  .columnB {
+    display: block;
+  }
+
 }
