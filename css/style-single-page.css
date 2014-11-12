@@ -85,8 +85,8 @@ ul.social-icons li a:hover {
 }
 #skills .ps, #skills .ai, #skills .html, #skills .css, #skills .express {
   padding:25px;
-  width:100px;
-  height:100px;
+  width: 100px;
+  height: 100px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
