@@ -1,210 +1,575 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <!--- Basic Page Needs
+    ================================================== -->
     <meta charset="utf-8">
     <title>Erica Kantor</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- styles -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/css/style-single-page.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/vertical-scroll.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- Add fancyBox main JS and CSS files -->
-    <script type="text/javascript" src="/js/jquery.fancybox.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=2.1.5" media="screen" />
-    <script>
-                $(document).ready(function() {
-            $(".fancybox-thumb").fancybox({
-                helpers : {
-                    title : {
-                        type: 'inside'
-                    },
-                    overlay : {
-                                css : {
-                                    'background' : 'rgba(1,1,1,0.65)'
-                                }
-                            }
-                }
-            });
-        });
-            </script>
-    </head>
-    <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="#profile"><img src="img/user.jpg"/></a>
-          <ul class="nav nav-collapse pull-right">
-            <li><a href="#profile"><i class="fa fa-user"></i> Profile</a></li>
-            <li><a href="#skills"><i class="fa fa-trophy"></i> Skills</a></li>
-            <li><a href="#work"><i class="fa fa-file-image-o"></i> Work</a></li>
-            <li><a href="#resume"><i class="fa fa-file-text-o"></i> Resume</a></li>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <!-- Script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+  <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.png" >
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+</head>
+
+<body>
+  <!-- Header
+    ================================================== -->
+    <header id="home">
+      <nav id="nav-wrap">
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+        <ul id="nav" class="nav">
+          <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+          <li><a class="smoothscroll" href="#resume">Resume</a></li>
+          <li><a class="smoothscroll" href="#skills">Skills</a></li>
+          <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+          <li><a class="smoothscroll" href="#contact">Contact</a></li>
+        </ul> <!-- end #nav -->
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+        <div class="banner-text">
+          <h1 class="responsive-headline">I'm Erica Kantor.</h1>
+          <h3>
+            I'm a Brooklyn based <a class="smoothscroll" href="#portfolio">Software Engineer</a> inspired by projects that make life simpler and more enjoyable.
+            When I'm not coding, I'm solving jigsaw puzzles, playing retro NES games, listening to dystopian audiobooks, and singing at the top of my lungs to Billy Joel songs.
+            <a class="smoothscroll" href="#resume">Start scrolling</a> to learn more or
+            <a class="smoothscroll" href="#contact">contact me</a> to get the conversation started.
+          </h3>
+          <img class="profile-pic" src="images/profilepic.jpg" alt="">
+          <ul class="social">
+            <li><a href="https://www.linkedin.com/in/ericakantor" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/ericak11" target="_blank"><i class="fa fa-github"></i></a></li>
           </ul>
-          <!-- Everything you want hidden at 940px or less, place within here -->
-          <div class="nav-collapse collapse">
-
-          </div>
         </div>
       </div>
-    </div>
-    <div class="clearfix">
-      <!--Profile container-->
-      <div id="profile" class="container">
-        <div class="span3"> <img src="img/mini.png"> </div>
-        <div class="span5">
-          <h1>Erica Kantor</h1>
-          <h3>Software Engineer</h3>
-          <p> I am a New York City based software engineer inspired by projects that make life simpler and more enjoyable.  When I'm not coding, I'm solving jigsaw puzzles, playing retro NES games, listening to dystopian audiobooks, and singing at the top of my lungs to Billy Joel songs.</p>
-          <div class="row social">
-            <ul class="social-icons">
-              <li><a href="https://www.linkedin.com/in/ericakantor" target="_blank"><img src="img/tw.png" alt="linkedIn"></a></li>
-              <li><a href="https://github.com/ericak11" target="_blank"><img src="img/go.png" alt="GitHub"></a></li>
+
+      <p class="scrolldown">
+      <a class="smoothscroll" href="#resume"><i class="icon-down-circle"></i></a>
+      </p>
+
+    </header> <!-- Header End -->
+
+
+  <!-- Resume Section
+    ================================================== -->
+    <section id="resume">
+      <div class="row">
+        <div class="three columns">
+        </div>
+        <div class="nine columns main-col">
+          <h2>Resume</h2>
+          <p>To see my resume please click the download button</p>
+          <div class="row">
+            <div class="columns download">
+              <p>
+              <a href="kantor.pdf" class="button"  download="ekantor.pdf"><i class="fa fa-download"></i>Download Resume</a>
+              </p>
+            </div>
+          </div> <!-- end row -->
+        </div> <!-- end .main-col -->
+      </div>
+    </section> <!-- Resume Section End-->
+
+
+  <!-- Skills Section
+    ================================================== -->
+    <section id="skills">
+      <div class="row skill">
+
+        <div class="three columns header-col">
+          <h1><span>Skills</span></h1>
+        </div>
+
+        <div class="nine columns collapsed">
+
+          <div class="skill-icons">
+            <div class="bgrid-quarters s-bgrid-thirds cf">
+            <ul class="skills">
+              <div class="columns"><li><a href="https://www.ruby-lang.org" target="_blank" class="devicon-ruby-plain-wordmark"></a></li></div>
+              <div class="columns"><li><a href="http://rubyonrails.org/" target="_blank" class="devicon-rails-plain-wordmark"></a></li></div>
+              <div class="columns"><li><a href="https://www.postgresql.org/" target="_blank" class="devicon-postgresql-plain-wordmark"></a></li></div>
+              <div class="columns"><li><a href="https://www.heroku.com/" target="_blank" class="devicon-heroku-original-wordmark"></a></li></div>
+              <div class="columns"><li><a href="http://www.vim.org/" target="_blank" class="devicon-vim-plain"></a></li></div>
+              <div class="columns"><li><a href="http://redis.io/" target="_blank" class="devicon-redis-plain-wordmark"></a></li></div>
+              <div class="columns"><li><a href="https://jquery.com/" target="_blank" class="devicon-jquery-plain-wordmark"></a></li></div>
+              <div class="columns"><li><a href="https://git-scm.com/" target="_blank" class="devicon-git-plain-wordmark"></a></li></div>
+              <div class="columns"><li><a href="https://www.djangoproject.com/" target="_blank" class="devicon-django-line-wordmark"></a></li></div>
+              <div class="columns"><li><a href="https://www.python.org/" target="_blank" class="devicon-python-plain-wordmark"></a></li></div>
+              <div class="columns"><li><a href="http://getbootstrap.com/" target="_blank" class="devicon-bootstrap-plain-wordmark" ></a></li></div>
+              <div class="columns"><li><a href="https://nodejs.org/" target="_blank" class="devicon-nodejs-plain-wordmark"></a></li></div>
             </ul>
-            <a href="##myModal" role="button" data-toggle="modal" class="hire-me"><i class="fa fa-paper-plane"></i> Contact Me </a>
-          </div>
-        </div>
-      </div>
-      <!--END: Profile container-->
-      <!--Skills container-->
-      <div id="skills" class="container">
-        <h2>My Skills</h2>
-        <div class="columnA">
-          <div class="span3">
-            <div class="ps">
-              <h3>Ruby on Rails</h3>
             </div>
-          </div>
-          <div class="span3">
-            <div class="ai">
-              <h3>JavaScript</h3>
-            </div>
-          </div>
-        </div>
-        <div class="columnB">
-          <div class="span3">
-            <div class="html">
-              <h3>Postgresql</h3>
-            </div>
-          </div>
-          <div class="span3">
-            <div class="css">
-              <h3>Node.JS</h3>
-            </div>
-          </div>
-        </div>
-            <div class="columnA">
-          <div class="span3">
-            <div class="ai">
-              <h3>Socket.io</h3>
-            </div>
-          </div>
-          <div class="span3">
-            <div class="ps">
-              <h3>Python/ Django</h3>
-            </div>
-          </div>
-        </div>
-        <div class="columnB">
-          <div class="span3">
-            <div class="css">
-              <h3>Redis</h3>
-            </div>
-          </div>
-          <div class="span3">
-            <div class="html">
-              <h3>Sinatra</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--END: Skills container-->
-      <!-- Works container -->
-      <div id="work" class="container">
-        <h2>My Work</h2>
-        <p> click on each image to visit the page </p>
-        <ul class="work-images">
-          <li>
-            <div class="works"><a class="fancybox-thumb" rel="fancybox-thumb" href="http://split--it.herokuapp.com/" title="Split.it" target="_blank"><img src="http://i.imgur.com/ytu1os7.png" /></a> <p> An app that allows people to split trip costs made using Ruby On Rails, Javascript, and Postgresql</p></div>
-          </li>
-          <li>
-            <div class="works"><a class="fancybox-thumb" rel="fancybox-thumb" href="http://name-that-tune.herokuapp.com/" title="Name That Tune" target="_blank"><img src="http://i.imgur.com/Kq2ZPqA.png" /></a><p> A game that allows you to challenge friends over the internet made using Node.JS, Express, and Socket.io</p></div>
-          </li>
-          <li>
-            <div class="works"><a class="fancybox-thumb" rel="fancybox-thumb" href="http://ancient-inlet-1734.herokuapp.com/" title="WDI Wiki" target="_blank"><img src="http://i.imgur.com/iofj8zX.png" /></a><p> A wiki app made using Ruby, Sinatra, and Redis</p></div>
-          </li>
-        </ul>
-        <ul class="work-images">
-          <li>
-            <div class="works"><a class="fancybox-thumb" rel="fancybox-thumb" href="http://shielded-gorge-6652.herokuapp.com/" title="Hipper Chat" target="_blank"><img src="http://i.imgur.com/dFZCRnb.jpg" /></a><p> A basic chat app made using socket.io</p></div>
-          </li>
-          <li>
-            <div class="works"><a class="fancybox-thumb" rel="fancybox-thumb" href="https://github.com/ericak11/project_euler" itle="Project Euler" target="_blank"><img src="img/projecteuler.png" /></a><p> Project Euler is a series of challenging mathematical/computer programming problems that I solved using Ruby</p></div>
-          </li>
-        </ul>
-      </div>
-      <!--END: Work container-->
-      <!-- Resume container -->
-      <div id="resume" class="container">
-        <h2>My Resume</h2>
-        <h3>You can view my resume below</h3>
-        <div class="btn-center"> <a href="kantor.pdf" target="_blank" class="hire-me"><i class="fa fa-download"></i> View Resume</a>
-        </div>
-      </div>
-      <!--END: Resume container-->
-    </div>
-    <!-- Footer -->
-    <div class="footer">
-      <div class="container">
-        <p class="pull-left"><a href="http://ericakantor.com">http://ericakantor.com</a></p>
-        <p class="pull-right"><a href="##myModal" role="button" data-toggle="modal"> <i class="fa fa-envelope-o"></i> CONTACT</a></p>
-      </div>
-    </div>
-    <!-- Contact form in Modal -->
-    <!-- Modal -->
-    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel"><i class="fa fa-envelope-o"></i> Contact Me</h3>
-      </div>
-      <div class="modal-body">
-  <div id="wufoo-zgdthg31ktguvz">
-Fill out my <a href="https://ericak11.wufoo.com/forms/zgdthg31ktguvz">online form</a>.
-</div>
-<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com">Wufoo</a>.</div>
-<script type="text/javascript">var zgdthg31ktguvz;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'ericak11',
-'formHash':'zgdthg31ktguvz',
-'autoResize':true,
-'height':'417',
-'async':true,
-'host':'wufoo.com',
-'header':'show',
-'ssl':true};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { zgdthg31ktguvz = new WufooForm();zgdthg31ktguvz.initialize(options);zgdthg31ktguvz.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script>
-      </div>
-    </div>
-    <!-- Scripts -->
-    <script>
-      $('#myModal').modal('hidden')
-    </script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          </div><!-- end skill-bars -->
+        </div> <!-- main-col end -->
+      </div> <!-- End skills -->
+    </section> <!-- Resume Section End-->
 
-  ga('create', 'UA-56711642-1', 'auto');
-  ga('send', 'pageview');
 
-</script>
-    </body>
-    </html>
+  <!-- Portfolio Section
+    ================================================== -->
+    <section id="portfolio">
+
+      <div class="row">
+
+        <div class="twelve columns collapsed">
+
+          <h1>Check Out Some of My Apps.</h1>
+
+          <!-- portfolio-wrapper -->
+          <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+
+                <a href="#modal-01" title="">
+                  <img alt="" src="images/portfolio/books.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Book Club Manager</h5>
+                      <p>Ruby On Rails</p>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+
+              </div>
+            </div> <!-- item end -->
+
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+
+                <a href="#modal-02" title="">
+                  <img alt="" src="images/portfolio/tix.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Tix Tracker</h5>
+                      <p>Ruby On Rails</p>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+
+              </div>
+            </div> <!-- item end -->
+
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+
+                <a href="#modal-03" title="">
+                  <img alt="" src="images/portfolio/name_tune.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Name That Tune</h5>
+                      <p>Node.js/Socket.io</p>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+
+              </div>
+            </div> <!-- item end -->
+
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+
+                <a href="#modal-04" title="">
+                  <img alt="" src="images/portfolio/whatwear.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>What Wear</h5>
+                      <p>Ruby On Rails</p>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+
+              </div>
+            </div> <!-- item end -->
+
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+
+                <a href="#modal-05" title="">
+                  <img alt="" src="images/portfolio/split_it.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Split.it</h5>
+                      <p>Ruby On Rails</p>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+
+              </div>
+            </div> <!-- item end -->
+
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+
+                <a href="#modal-06" title="">
+                  <img alt="" src="images/portfolio/questions.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Questions App</h5>
+                      <p>Python/Django</p>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+
+              </div>
+            </div> <!-- item end -->
+
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+
+                <a href="#modal-07" title="">
+                  <img alt="" src="images/portfolio/captain.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Captain's Log</h5>
+                      <p>Ruby On Rails</p>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+
+              </div>
+            </div> <!-- item end -->
+
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+
+                <a href="#modal-08" title="">
+                  <img alt="" src="images/portfolio/wiki.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>WDI Wiki</h5>
+                      <p>Ruby/Sinatra/Redis</p>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+
+              </div>
+            </div>  <!-- item end -->
+
+          </div> <!-- portfolio-wrapper end -->
+
+        </div> <!-- twelve columns end -->
+
+
+      <!-- Modal Popup
+        --------------------------------------------------------------- -->
+
+        <div id="modal-01" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="images/portfolio/modals/m_books.jpg" alt="" />
+
+          <div class="description-box">
+            <h4>Book Club Manager</h4>
+            <p>An app for managing a book club. Allows tracking of events, recipes, and keeps track of books read. Feel free to create an account and check it out for yourself. </p>
+            <span class="categories"><i class="fa fa-tag"></i>Ruby On Rails, Postgres, Bootstrap, HAML</span>
+          </div>
+
+          <div class="link-box">
+            <a href="http://bookclubmanager.herokuapp.com/" target="_blank">Website</a>
+            <a style="margin-left: 24px;" href="https://github.com/ericak11/book_club_manager" target="_blank" ><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+            <a class="popup-modal-dismiss" style="float: right;margin-top: 5px;"><i style="font-size:20px;" class="fa fa-times" aria-hidden="true"></i></a>
+          </div>
+
+        </div><!-- modal-01 End -->
+
+        <div id="modal-02" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="images/portfolio/modals/m_tix.jpg" alt="" />
+
+          <div class="description-box">
+            <h4>Tix Tracker</h4>
+            <p>An app for tracking the use of season tickets for sporting events. Uses the seat geek API for mass adding of events. Create an account and see it in action. </p>
+            <span class="categories"><i class="fa fa-tag"></i>Ruby On Rails, Postgres, Bootstrap, HAML </span>
+          </div>
+
+          <div class="link-box">
+            <a href="https://tixtracker.herokuapp.com/" target="_blank">Website</a>
+            <a style="margin-left: 24px;" href="https://github.com/ericak11/ticket_tracker" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+            <a class="popup-modal-dismiss" style="float: right;margin-top: 5px;"><i style="font-size:20px;" class="fa fa-times" aria-hidden="true"></i></a>
+          </div>
+
+        </div><!-- modal-02 End -->
+
+        <div id="modal-03" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="images/portfolio/modals/m_name_tune.jpg" alt="" />
+
+          <div class="description-box">
+            <h4>Name That Tune</h4>
+            <p>A game that allows you to challenge friends over the internet in a game of 'Name That Tune'. Utilizes sockets to create various rooms where users can play.</p>
+            <span class="categories"><i class="fa fa-tag"></i>Node.js, Express, Socket.io, Jquery, Spotify API</span>
+          </div>
+
+          <div class="link-box">
+            <a href="http://name-that-tune.herokuapp.com/" target="_blank">Website</a>
+            <a style="margin-left: 24px;" href="https://github.com/ericak11/name_that_tune_app" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+            <a class="popup-modal-dismiss" style="float: right;margin-top: 5px;"><i style="font-size:20px;" class="fa fa-times" aria-hidden="true"></i></a>
+          </div>
+
+        </div><!-- modal-03 End -->
+
+        <div id="modal-04" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="images/portfolio/modals/m_whatwear.jpg" alt="" />
+
+          <div class="description-box">
+            <h4>What Wear</h4>
+            <p>An app for figuring out which closet clothing is in. Built with the Beta of Rails 5. This app is still in development.</p>
+            <span class="categories"><i class="fa fa-tag"></i>Ruby On Rails, Postgres, Semantic-ui, HAML, S3</span>
+          </div>
+
+          <div class="link-box">
+            <!-- <a href="" target="_blank">Website</a> -->
+            <a style="margin-left: 24px;" href="https://github.com/ericak11/whatwear" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+            <a class="popup-modal-dismiss" style="float: right;margin-top: 5px;"><i style="font-size:20px;" class="fa fa-times" aria-hidden="true"></i></a>
+          </div>
+
+        </div><!-- modal-04 End -->
+
+        <div id="modal-05" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="images/portfolio/modals/m_split_it.jpg" alt="" />
+
+          <div class="description-box">
+            <h4>Split.it</h4>
+            <p>An app that allows people to split trip costs. Created as a group project, I was responsible for the back-end logic.</p>
+            <span class="categories"><i class="fa fa-tag"></i>Ruby On Rails, Postgres</span>
+          </div>
+
+          <div class="link-box">
+            <a href="http://split--it.herokuapp.com/" target="_blank">Website</a>
+            <a style="margin-left: 24px;" href="https://github.com/thebkbuffalo/travel_breakdown_app" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+            <a class="popup-modal-dismiss" style="float: right;margin-top: 5px;"><i style="font-size:20px;" class="fa fa-times" aria-hidden="true"></i></a>
+          </div>
+
+        </div><!-- modal-05 End -->
+
+        <div id="modal-06" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="images/portfolio/modals/m_questions.jpg" alt="" />
+
+          <div class="description-box">
+            <h4>Questions App</h4>
+            <p>An app to track interview qustions being asked. Built as a way to learn Django. Create an account and try it out.</p>
+            <span class="categories"><i class="fa fa-tag"></i>Python, Django </span>
+          </div>
+
+          <div class="link-box">
+            <a href="https://infinite-ocean-7878.herokuapp.com/" target="_blank">Website</a>
+            <a style="margin-left: 24px;" href="https://github.com/ericak11/questions_app" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+            <a class="popup-modal-dismiss" style="float: right;margin-top: 5px;"><i style="font-size:20px;" class="fa fa-times" aria-hidden="true"></i></a>
+          </div>
+
+        </div><!-- modal-06 End -->
+
+        <div id="modal-07" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="images/portfolio/modals/m_captain.jpg" alt="" />
+
+          <div class="description-box">
+            <h4>Captain's Log</h4>
+            <p>An app for managing staff and spending on a boat. Can also manage daily tasks.</p>
+            <span class="categories"><i class="fa fa-tag"></i>Ruby On Rails, Postgres</span>
+          </div>
+
+          <div class="link-box">
+            <a href="https://captain-log.herokuapp.com/" target="_blank">Website</a>
+            <a style="margin-left: 24px;" href="https://github.com/ericak11/captains_log" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+            <a class="popup-modal-dismiss" style="float: right;margin-top: 5px;"><i style="font-size:20px;" class="fa fa-times" aria-hidden="true"></i></a>
+          </div>
+
+        </div><!-- modal-07 End -->
+
+        <div id="modal-08" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="images/portfolio/modals/m_wiki.jpg" alt="" />
+
+          <div class="description-box">
+            <h4>WDI Wiki</h4>
+            <p>A Wiki app for compiling information about WDI (GA's Web Development Immersive). Allows for tagging and editing articles. Sign in enabled through Google OAuth. </p>
+            <span class="categories"><i class="fa fa-tag"></i>Ruby, Sinatra, Redis, Google OAuth</span>
+          </div>
+
+          <div class="link-box">
+            <a href="http://ancient-inlet-1734.herokuapp.com/" target="_blank">Website</a>
+            <a style="margin-left: 24px;" href="https://github.com/ericak11/project_one_wiki_app" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+            <a class="popup-modal-dismiss" style="float: right;margin-top: 5px;"><i style="font-size:20px;" class="fa fa-times" aria-hidden="true"></i></a>
+          </div>
+
+        </div><!-- modal-01 End -->
+
+
+    </div> <!-- row End -->
+
+  </section> <!-- Portfolio Section End-->
+
+
+
+  <!-- Contact Section
+    ================================================== -->
+    <section id="contact">
+
+      <div class="row section-head">
+
+        <div class="two columns header-col">
+
+          <h1><span>Get In Touch.</span></h1>
+
+        </div>
+
+        <div class="ten columns">
+
+          <p class="lead">
+            Please fill out the form below and I will get back to you as soon as possible.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="eight columns">
+
+          <!-- form -->
+          <form action="" method="post" id="contactForm" name="contactForm">
+            <fieldset>
+
+              <div>
+                <label for="contactName">Name <span class="required">*</span></label>
+                <input type="text" value="" size="35" id="contactName" name="contactName">
+              </div>
+
+              <div>
+                <label for="contactEmail">Email <span class="required">*</span></label>
+                <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+              </div>
+
+              <div>
+                <label for="contactSubject">Subject</label>
+                <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+              </div>
+
+              <div>
+                <label for="contactMessage">Message <span class="required">*</span></label>
+                <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+              </div>
+
+              <div>
+                <button class="submit">Submit</button>
+                <span id="image-loader">
+                  <img alt="" src="images/loader.gif">
+                </span>
+              </div>
+
+            </fieldset>
+          </form> <!-- Form End -->
+
+          <!-- contact-warning -->
+          <div id="message-warning"> Error </div>
+          <!-- contact-success -->
+          <div id="message-success">
+            <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+          </div>
+
+        </div>
+
+
+        <aside class="four columns footer-widgets">
+
+          <div class="widget widget_contact">
+
+            <h4>Check Me Out on Social Media</h4>
+              <ul class="social-links" >
+                <li><a href="https://www.linkedin.com/in/ericakantor" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/ericak11" target="_blank"><i class="fa fa-github"></i></a></li>
+              </ul>
+
+          </div>
+        </aside>
+
+      </div>
+
+    </section> <!-- Contact Section End-->
+
+
+    <!-- footer
+      ================================================== -->
+      <footer>
+
+        <div class="row">
+
+          <div class="twelve columns">
+
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/ericakantor" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/ericak11" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+              <li>&copy; Copyright 2016 </li>
+              <li>Design by <a title="Styleshout" href="http://www.styleshout.com/" target="_blank">Styleshout</a> and Erica Kantor</li>
+            </ul>
+
+          </div>
+
+          <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+        </div>
+
+      </footer> <!-- Footer End-->
+
+      <!-- Java Script
+        ================================================== -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/waypoints.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+        <script src="js/magnific-popup.js"></script>
+        <script src="js/init.js"></script>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-56711642-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+</body>
+
+</html>
