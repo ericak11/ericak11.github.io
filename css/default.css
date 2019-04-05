@@ -807,3 +807,7 @@ properly.
   max-height: 300px;
 }
 
+.feature-pic {
+  max-height: 300px;
+  margin-bottom: 25px;
+}

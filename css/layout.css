@@ -179,7 +179,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #11ABB0; }
 
 
 /* ------------------------------------------------------------------ */
@@ -213,7 +213,6 @@ ul#nav li.current a { color: #F06000; }
 }
 #resume .contact-details { width: 41.66667%; }
 #resume .download {
-   width: 58.33333%;
    padding-top: 6px;
 }
 #resume .main-col { padding-right: 5%; }
@@ -562,7 +561,7 @@ ul#nav li.current a { color: #F06000; }
    letter-spacing: 3px;
    cursor: pointer;
 }
-.popup-modal a:hover {	color: #00CCCC; }
+.popup-modal a:hover {	color: #11ABB0; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
 
 
@@ -974,7 +973,7 @@ footer .social-links li {
     margin: 0;
     padding: 0;
     margin-left: 42px;
-    color: #F06000;
+    color: #11ABB0;
 }
 
 footer .social-links li:first-child { margin-left: 0; }
